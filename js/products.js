@@ -50,7 +50,8 @@ const PRODUCTOS = [
     nombre: "Secreto Ibérico de Bellota",
     descripcion: "El corte más apreciado por los chefs. Máxima infiltración de grasa, sabor profundo. Ideal a la brasa.",
     precio: 42,
-    unidad: "kg"
+    unidad: "kg",
+    imagen: "secreto-iberico.png"
   },
   {
     id: "chorizo-iberico",
