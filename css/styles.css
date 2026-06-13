@@ -14,6 +14,7 @@
   --sombra: rgba(74, 18, 32, 0.15);
   --radio: 12px;
   --radio-grande: 20px;
+  --mosaico: url('../img/mosaico.png');
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -144,12 +145,12 @@ h1, h2, h3 {
 }
 
 .hero::before {
-  content: '🌰';
+  content: '';
   position: absolute;
-  font-size: 8rem;
-  opacity: 0.04;
-  top: -1rem;
-  right: 5%;
+  inset: 0;
+  background: var(--mosaico) repeat center;
+  background-size: 260px auto;
+  opacity: 0.14;
   pointer-events: none;
 }
 
@@ -215,6 +216,35 @@ h1, h2, h3 {
 .badge--dorado {
   background: var(--dorado);
   color: var(--burdeos-oscuro);
+}
+
+/* ── Fondo mosaico ── */
+.fondo-mosaico {
+  position: relative;
+  overflow: hidden;
+}
+
+.fondo-mosaico::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--mosaico) repeat center;
+  background-size: 300px auto;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.fondo-mosaico::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(253, 248, 240, 0.78);
+  pointer-events: none;
+}
+
+.fondo-mosaico > .seccion {
+  position: relative;
+  z-index: 1;
 }
 
 /* ── Secciones ── */
