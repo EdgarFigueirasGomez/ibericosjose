@@ -12,15 +12,14 @@ function renderProductos() {
   grid.innerHTML = PRODUCTOS.map(p => {
     const qty = cantidades[p.id] || 1;
     const src = imagenProducto(p);
-    const esGenerica = !p.imagen;
     return `
       <article class="producto-card${p.destacado ? ' producto-card--destacado' : ''}" data-id="${p.id}">
-        <div class="producto-card__imagen${esGenerica ? ' producto-card__imagen--generica' : ''}">
+        <div class="producto-card__imagen">
           <img
             src="${src}"
             alt="${p.nombre}"
             loading="lazy"
-            onerror="this.onerror=null;this.src='${IMAGEN_GENERICA}';this.parentElement.classList.add('producto-card__imagen--generica')"
+            onerror="this.onerror=null;this.src='${IMAGEN_GENERICA}'"
           >
           ${p.etiqueta ? `<span class="producto-card__etiqueta">${p.etiqueta}</span>` : ''}
         </div>
