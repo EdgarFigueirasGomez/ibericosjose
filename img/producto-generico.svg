@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" role="img" aria-label="Producto ibérico">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A1220"/>
+      <stop offset="100%" stop-color="#6B1D2A"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8D48B"/>
+      <stop offset="100%" stop-color="#C9A84C"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" fill="url(#bg)"/>
+  <circle cx="200" cy="118" r="72" fill="none" stroke="#C9A84C" stroke-width="2" opacity="0.35"/>
+  <circle cx="200" cy="118" r="52" fill="none" stroke="#C9A84C" stroke-width="1.5" opacity="0.25"/>
+  <!-- Bellota -->
+  <ellipse cx="200" cy="108" rx="22" ry="28" fill="url(#gold)"/>
+  <path d="M200 80 C188 88 178 98 178 112 C178 124 188 132 200 136 C212 132 222 124 222 112 C222 98 212 88 200 80Z" fill="#9A7B2F" opacity="0.5"/>
+  <ellipse cx="200" cy="136" rx="10" ry="6" fill="#9A7B2F"/>
+  <!-- Hojas -->
+  <path d="M168 118 Q155 100 162 88 Q172 96 168 118Z" fill="#C9A84C" opacity="0.7"/>
+  <path d="M232 118 Q245 100 238 88 Q228 96 232 118Z" fill="#C9A84C" opacity="0.7"/>
+  <text x="200" y="210" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#E8D48B" letter-spacing="2">IBÉRICO DE BELLOTA</text>
+  <text x="200" y="236" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#FDF8F0" opacity="0.75">Valdelarco · Huelva</text>
+</svg>

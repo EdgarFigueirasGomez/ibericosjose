@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibéricos José — Valdelarco, Huelva</title>
+  <meta name="description" content="Productos ibéricos de bellota de Valdelarco, Huelva. Jamón, paletilla, lomo, presa, secreto, chorizo y más. Pedido por Bizum o transferencia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/iberijose.png" type="image/png">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="header__brand">
+        <img src="img/iberijose.png" alt="Ibéricos José" class="header__logo">
+        <div>
+          <div class="header__title">Ibéricos José</div>
+          <div class="header__subtitle">Valdelarco · Huelva</div>
+        </div>
+      </a>
+      <nav class="header__nav">
+        <a href="#productos">Productos</a>
+        <a href="#pago">Pago</a>
+        <a href="#contacto">Contacto</a>
+        <button class="btn-carrito" id="btnAbrirCarrito" aria-label="Ver carrito">
+          🛒 Carrito
+          <span class="btn-carrito__badge btn-carrito__badge--hidden" id="badgeCarrito">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="img/iberijose.png" alt="Logo Ibéricos José" class="hero__logo-grande">
+    <h1>Ibérico de <span>Bellota</span><br>de Valdelarco</h1>
+    <p class="hero__tagline">
+      Lo mejor de la dehesa onubense, directo a tu mesa.
+      Sin complicaciones: elige, reserva y paga por Bizum o transferencia.
+    </p>
+    <div class="hero__badges">
+      <span class="badge">🌰 100% Bellota</span>
+      <span class="badge badge--dorado">📍 Valdelarco, Huelva</span>
+      <span class="badge">🐷 Todo Ibérico</span>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section class="seccion" id="productos">
+    <h2 class="seccion__titulo">🥩 Nuestros Productos</h2>
+    <p class="seccion__subtitulo">Calidad artesanal. Precios orientativos — te confirmamos el peso exacto al reservar.</p>
+    <div class="productos-grid" id="productosGrid"></div>
+  </section>
+
+  <!-- Pago -->
+  <section class="seccion" id="pago">
+    <h2 class="seccion__titulo">💳 ¿Cómo pagar?</h2>
+    <p class="seccion__subtitulo">Sin pasarela online. Trato directo y de confianza.</p>
+    <div class="pago-info">
+      <p>Una vez confirmes tu pedido, te contactamos para acordar el peso exacto y el importe final. Luego pagas como prefieras:</p>
+      <div class="pago-info__grid">
+        <div class="pago-metodo">
+          <div class="pago-metodo__icono">📱</div>
+          <h3>Bizum</h3>
+          <p>Al número <strong>690 25 38 46</strong>. Rápido y sin comisiones.</p>
+        </div>
+        <div class="pago-metodo">
+          <div class="pago-metodo__icono">🏦</div>
+          <h3>Transferencia</h3>
+          <p>Te enviamos el IBAN por WhatsApp o teléfono al confirmar el pedido.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="contacto" id="contacto">
+    <h2>¿Dudas? ¡Llámanos!</h2>
+    <p>Estamos en Valdelarco, en el corazón de la Sierra de Huelva.</p>
+    <a href="tel:+34690253846" class="contacto__tel">📞 690 25 38 46</a>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Ibéricos José · Valdelarco, Huelva · Productos 100% ibéricos de bellota</p>
+  </footer>
+
+  <!-- Modal Carrito / Pedido -->
+  <div class="modal-overlay" id="modalCarrito" role="dialog" aria-modal="true" aria-label="Carrito de compra">
+    <div class="modal">
+      <div class="modal__header">
+        <h2>🛒 Tu Pedido</h2>
+        <button class="modal__cerrar" id="btnCerrarCarrito" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal__body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
